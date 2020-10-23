@@ -17,7 +17,7 @@ def recurs():
         z = str(input('Введите Имя Фамилию'))
         for i in range(len(LOP)):
             if z == LOP[i].getInfo()[0]:
-                print("Клиент «{}». Баланс: {} руб.".format(LOP[0].getInfo()[0], LOP[0].getInfo()[1])) # вместо LOP[0] надо LOP.index(z)!1!!
+                print("Клиент «{}». Баланс: {} руб.".format(LOP[i].getInfo()[0], LOP[i].getInfo()[1]))
         recurs()
     else:
         return "Helo"
